@@ -15,11 +15,10 @@ import java.util.ArrayList;
  */
 public class MRuntimePermissionUtil {
     //BLE权限
-    public static final int RUNTIM_EPERMISSION_REQUEST_CODE_BLE = 0x004;
-    public static final String[] PERMISSIONS_BLE = {
+    public static final int RUNTIM_EPERMISSION_REQUEST_CODE_LOCATION = 0x004;
+    public static final String[] PERMISSIONS_LOCATION = {
             Manifest.permission.ACCESS_FINE_LOCATION,
             Manifest.permission.ACCESS_COARSE_LOCATION,
-            Manifest.permission.BLUETOOTH
     };
 
     //相机权限
@@ -39,7 +38,7 @@ public class MRuntimePermissionUtil {
             String[] p = new String[per.size()];
             ActivityCompat.requestPermissions(activity, per.toArray(p), requestCode);
             return false;
-        }else{
+        } else {
             return true;
         }
     }
@@ -55,12 +54,12 @@ public class MRuntimePermissionUtil {
             String[] p = new String[per.size()];
             fragment.requestPermissions(per.toArray(p), requestCode);
             return false;
-        }else{
+        } else {
             return true;
         }
     }
 
-    public static boolean isPermissionsGranted(int[] grantResults){
+    public static boolean isPermissionsGranted(int[] grantResults) {
         if (grantResults.length > 0
                 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             return true;

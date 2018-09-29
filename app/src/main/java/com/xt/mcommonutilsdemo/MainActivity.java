@@ -1,7 +1,12 @@
 package com.xt.mcommonutilsdemo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Toast;
+
+import com.xt.m_common_utils.MRuntimePermissionUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -9,5 +14,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (MRuntimePermissionUtil.isPermissionsGranted(grantResults)) {
+            toast();
+        }
+    }
+
+    private void requestLocationRuntimePermission() {
+        if (MRuntimePermissionUtil.requestPermissions(this, MRuntimePermissionUtil.PERMISSIONS_LOCATION, MRuntimePermissionUtil.RUNTIM_EPERMISSION_REQUEST_CODE_LOCATION)) {
+            toast();
+        }
+    }
+
+    private void toast() {
+        Toast.makeText(this, "定位权限获取成功", Toast.LENGTH_SHORT).show();
+    }
+
+    public void location(View view) {
+        requestLocationRuntimePermission();
     }
 }
