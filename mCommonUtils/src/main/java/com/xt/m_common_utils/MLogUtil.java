@@ -15,9 +15,6 @@ import java.util.concurrent.Executors;
 
 /**
  * 对Log的封装
- *
- * @author Phoenix
- * @date 2016-8-3 15:08
  */
 public final class MLogUtil {
     private static final Boolean IS_SHOW = true;
