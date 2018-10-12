@@ -39,7 +39,7 @@ dependencies {
 
     api 'com.google.code.gson:gson:2.8.2'
     /*****************Blankj/AndroidUtilCode*****************/
-    implementation 'com.blankj:utilcode:1.17.3'
+    api 'com.blankj:utilcode:1.17.3'
     /*****************Blankj/AndroidUtilCode*****************/
 
     api 'com.github.bumptech.glide:glide:4.7.1'
