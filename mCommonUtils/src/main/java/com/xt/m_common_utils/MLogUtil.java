@@ -162,8 +162,9 @@ public final class MLogUtil {
                     FileUtils.deleteFilesInDir(logFileDir);
 
                 }
-                FileUtils.createOrExistsFile(filePath);
-                FileCacheUtils.write2File(msg, filePath);
+                if (FileUtils.createOrExistsFile(filePath)) {
+                    FileCacheUtils.write2File(msg, filePath);
+                }
             }
         });
     }
