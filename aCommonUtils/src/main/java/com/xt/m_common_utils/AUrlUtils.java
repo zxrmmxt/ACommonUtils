@@ -9,7 +9,7 @@ import java.net.URL;
  * Created by xuti on 2017/9/6.
  */
 
-public class MUrlUtils {
+public class AUrlUtils {
     public static long getLastModified(String urlStr) {
         try {
             URL url = new URL(urlStr);

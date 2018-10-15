@@ -26,7 +26,7 @@ import java.io.File;
  * glide动画和placeholder不能同时设置
  */
 
-public class MImageUtils {
+public class AImageUtils {
     /*************************图片转换*********************************/
     /**
      * base64字符串转成图片
@@ -94,7 +94,7 @@ public class MImageUtils {
     }
 
     /**
-     * {@link MUrlUtils#getLastModified(String)}
+     * {@link AUrlUtils#getLastModified(String)}
      */
     private static void loadImageOfSameUrl(Context context, long lastModified, int resourceIdError, String imageUrl, ImageView iv) {
         RequestOptions requestOptions = new RequestOptions().signature(new ObjectKey(lastModified)).dontAnimate()

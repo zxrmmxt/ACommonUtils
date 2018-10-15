@@ -7,7 +7,7 @@ import com.blankj.utilcode.util.ConvertUtils;
 /**
  * Created by xuti on 2018/9/29.
  */
-public class MConvertUtils {
+public class AConvertUtils {
     public static String bytes2HexString(byte[] bytes) {
         return doBytes2HexString(bytes);
     }

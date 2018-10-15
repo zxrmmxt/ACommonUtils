@@ -1,1 +1,1 @@
-include ':app', ':mCommonUtils'
+include ':app', ':aCommonUtils'

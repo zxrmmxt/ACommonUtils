@@ -13,7 +13,7 @@ import java.util.Locale;
  * Created by xuti on 2017/9/15.
  */
 
-public class MTimeUtils {
+public class ATimeUtils {
     /***************时间格式***********************/
     public static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
     public static final String DATE_FORMAT1 = "yyyy.MM.dd HH:mm";
@@ -110,9 +110,9 @@ public class MTimeUtils {
     }
 
     public static Date[] getToday() {
-        Date endDate = MTimeUtils.getNowDate();
+        Date endDate = ATimeUtils.getNowDate();
         return new Date[]{
-                MTimeUtils.getDayStart(0),
+                ATimeUtils.getDayStart(0),
                 endDate
         };
     }

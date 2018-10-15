@@ -8,7 +8,7 @@ import android.view.WindowManager;
 /**
  * Created by xuti on 2018/9/30.
  */
-public class MScreenUtils {
+public class AScreenUtils {
     /**
      * Return the width of screen, in pixel.
      *

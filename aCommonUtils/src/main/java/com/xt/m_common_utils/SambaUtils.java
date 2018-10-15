@@ -19,7 +19,7 @@ public class SambaUtils {
     private static final String TAG = SambaUtils.class.getSimpleName();
     public static List<SmbFile> images = new ArrayList<>();
     public static void downloadViaShare(final String ip, final String user, final String password, final String dir) {
-        MLogUtil.d("Share(SMB) download!");
+        ALogUtil.d("Share(SMB) download!");
         String newDir = dir;
         String url = "";
         SmbFile[] fileList = null;
@@ -175,14 +175,14 @@ public class SambaUtils {
                 list.add(file);
                 try {
                     if (file.isDirectory()) {
-                        MLogUtil.d(TAG,"目录-------------------》"+file.getName());
+                        ALogUtil.d(TAG,"目录-------------------》"+file.getName());
                         List<SmbFile> fileList = listFilesInDir(file);
                         if (fileList != null) {
                             list.addAll(fileList);
                         }
                     }else if(file.isFile()){
                         images.add(file);
-                        MLogUtil.d(TAG,"文件-------------------》"+file.getPath());
+                        ALogUtil.d(TAG,"文件-------------------》"+file.getPath());
                     }
                 } catch (SmbException e) {
                     e.printStackTrace();

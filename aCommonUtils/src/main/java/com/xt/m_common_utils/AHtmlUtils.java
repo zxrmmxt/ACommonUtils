@@ -12,7 +12,7 @@ import java.io.IOException;
  * jsoup-1.10.2.jar
  */
 
-public class MHtmlUtils {
+public class AHtmlUtils {
     public static void parseHtml() {
         Document doc = null;
         try {

@@ -20,7 +20,7 @@ import android.widget.LinearLayout;
  * Email: chjie.jaeger@gmail.com
  * GitHub: https://github.com/laobie
  */
-public class MStatusBarUtil {
+public class AStatusBarUtil {
 
     public static final int DEFAULT_STATUS_BAR_ALPHA = 112;
     private static final int FAKE_STATUS_BAR_VIEW_ID = R.id.statusbarutil_fake_status_bar_view;

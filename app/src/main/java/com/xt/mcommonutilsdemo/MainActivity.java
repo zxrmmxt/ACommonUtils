@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
-import com.xt.m_common_utils.MRuntimePermissionUtil;
+import com.xt.m_common_utils.ARuntimePermissionUtil;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (MRuntimePermissionUtil.isPermissionsGranted(grantResults)) {
+        if (ARuntimePermissionUtil.isPermissionsGranted(grantResults)) {
             toast();
         }
     }
 
     private void requestLocationRuntimePermission() {
-        if (MRuntimePermissionUtil.requestPermissions(this, MRuntimePermissionUtil.PERMISSIONS_LOCATION, MRuntimePermissionUtil.RUNTIM_EPERMISSION_REQUEST_CODE_LOCATION)) {
+        if (ARuntimePermissionUtil.requestPermissions(this, ARuntimePermissionUtil.PERMISSIONS_LOCATION, ARuntimePermissionUtil.RUNTIM_EPERMISSION_REQUEST_CODE_LOCATION)) {
             toast();
         }
     }

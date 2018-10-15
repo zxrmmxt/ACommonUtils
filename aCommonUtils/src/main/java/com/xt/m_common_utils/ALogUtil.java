@@ -16,11 +16,11 @@ import java.util.concurrent.Executors;
 /**
  * 对Log的封装
  */
-public final class MLogUtil {
+public final class ALogUtil {
     private static final Boolean IS_SHOW = true;
     private static final String TAG = "LOG";
 
-    private MLogUtil() {
+    private ALogUtil() {
     }
 
     /**

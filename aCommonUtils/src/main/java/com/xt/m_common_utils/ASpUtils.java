@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 /**
  * Created by xuti on 2018/6/14.
  */
-public class MSpUtils {
+public class ASpUtils {
 
     /***********************同步更新*********************************/
     private static SharedPreferences getSharedPreferences(Context context, String spFileName) {

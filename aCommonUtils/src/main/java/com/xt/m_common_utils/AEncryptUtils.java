@@ -5,7 +5,7 @@ import com.blankj.utilcode.util.EncryptUtils;
 /**
  * Created by xuti on 2018/9/30.
  */
-public class MEncryptUtils {
+public class AEncryptUtils {
     public static String encryptMd5(String data) {
         return EncryptUtils.encryptMD5ToString(data);
     }
